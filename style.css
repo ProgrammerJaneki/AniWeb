@@ -1,0 +1,140 @@
+@import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@200&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap');
+
+* {
+  font-family: 'Roboto Mono', monospace;
+  /* font-family: "Source Sans Pro", sans-serif; */
+  /* box-sizing: border-box; */
+  /* top: 0;
+  left: 0; */
+  margin: 0;
+  padding: 0;
+}
+:root {
+  --secondary-black-forga: #16171d;
+  --color-dark-blue: #101014ff;
+  --color-mid-blue: #16171d;
+  --color-light-blue: #1f2128;
+  --text-font: #5e5d7a;
+  --text-font-hover: #5f46ba;
+  --text-font-size: 16px;
+  /* --whole-page-margin: 50px 30px 50px  */
+}
+body {
+  background-color: var(--color-dark-blue);
+
+}
+
+.header {
+  background-color: var(--color-mid-blue);
+  width: 100%;
+}
+
+a {
+  color: black;
+}
+
+a:link {
+  text-decoration: none;
+}
+
+nav {
+  display: flex;
+  padding: 1% 5%;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-links {
+  letter-spacing: 2px;
+  font-size: var(--text-font-size);
+  font-weight: bolder;
+}
+
+/* .logo {
+  display: flex;
+  align-items: center;
+} */
+
+/* .logo::after {
+  content: "ANIWEB";
+  font-weight: bolder;
+  color: var(--text-font);
+  font-size: var(--text-font-size);
+  margin-left: 15px;G
+} */
+
+.four-nav>li {
+  display: inline-block;
+  list-style: none;
+  padding: 0 20px;
+}
+
+.four-nav a {
+  color: var(--text-font);
+  transition: 0.2s;
+}
+
+.four-nav a:hover {
+  color: var(--text-font-hover);
+  padding-bottom: 5px;
+  border-bottom: solid var(--text-font-hover) 2px;
+}
+.anime-container {
+  display: flex;
+  flex-flow: wrap;
+  color: var(--text-font);
+  font-size: var(--text-font-size);
+  font-weight: bolder;
+  min-height: 500px;
+  margin: 10px 50px;
+  padding: 40px 0;
+  justify-content: space-around;
+  /* background-color: burlywood; */
+}
+/* .first-container {
+  background-color: red;
+} */
+.ani-details-container > .fa-chevron-left , .ani-details-container > .fa-chevron-right{
+  /* background-color: rgba(46, 40, 40, 0.315); */
+  backdrop-filter: blur(20px);
+  /* color: var(--text-font); */
+  color: white;
+  font-size: 25px;
+  font-weight: bolder;
+  padding: 16px;
+  position: absolute;
+  top: 45%;
+  transition: 0.6s ease;
+}
+.fa-chevron-right {
+  right: 0;
+}
+.ani-details-container > .fa-chevron-right:hover, .ani-details-container > .fa-chevron-left:hover {
+  cursor: pointer;
+  color: var(--text-font-hover);
+  /* background-color: rgba(46, 40, 40, 0.315); */
+}
+.anime-list, .popular-anime {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px;
+  width: 38rem;
+  height: 30rem;
+  border-radius: 10px;
+  background-color: var(--color-mid-blue);
+}
+/* Carousel */
+.ani-details-container {
+  /* background-color: var(--color-light-blue); */
+  /* background-image:  linear-gradient(to bottom, rgba(255,255,0,0.5), rgba(0,0,255,0.5)), url(images/ganyu.jpg); */
+  background-image: url(images/ganyu.jpg);
+  background-size: cover;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+  border-radius: 10px;
+  min-height: 350px;
+  min-width: 450px;
+  margin: 20px;
+  position: relative;
+}
