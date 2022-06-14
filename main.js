@@ -11,7 +11,6 @@ slides.forEach((aniSlides, index) => {
 
 // slider counter
 let sliderCounter = 0;
-console.log(sliderCounter);
 
 // access the next btn
 nextSlide.addEventListener("click", function () {
@@ -24,9 +23,6 @@ nextSlide.addEventListener("click", function () {
          aniSlides.style.transform = `translateX(${
             (index - sliderCounter) * 100
          }%)`;
-         console.log("Index: ", index);
-         console.log("Counter: ", sliderCounter);
-         console.log("Placement: ", index - sliderCounter);
       });
    }
 });
@@ -38,14 +34,10 @@ prevSlide.addEventListener("click", function () {
       // sliderCounter is inside as we don't want the counter to
       // less than 0
       sliderCounter--;
-      console.log("Inside");
       slides.forEach((aniSlides, index) => {
          aniSlides.style.transform = `translateX(${
             (index - sliderCounter) * 100
          }%)`;
-         console.log("Index: ", index);
-         console.log("Counter: ", sliderCounter);
-         console.log("Placement: ", index - sliderCounter);
       });
    }
 });
