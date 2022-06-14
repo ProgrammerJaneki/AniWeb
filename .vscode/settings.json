@@ -1,0 +1,11 @@
+{
+  "editor.fontFamily": "'Droid Sans Mono', 'monospace', monospace, 'Lekton Nerd Font'",
+  "editor.tabSize": 3,
+  "editor.fontSize": 12,
+  "editor.mouseWheelZoom": true,
+  "liveServer.settings.ChromeDebuggingAttachment": false,
+  "liveServer.settings.CustomBrowser": "chrome",
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "open-in-browser.default": "chrome",
+  "liveServer.settings.useBrowserPreview": true
+}
